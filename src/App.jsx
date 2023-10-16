@@ -8,7 +8,7 @@ function App() {
   const [mensaje, setMensaje] = useState('');
 
   const handleMensaje = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //evita que se actualice la app luego de cumplir la función
 
     if (edad > 17) {
       setMensaje(`Bienvenido ${nombre}, gracias por usar nuestra aplicación`);
